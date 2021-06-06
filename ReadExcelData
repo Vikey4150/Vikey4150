@@ -1,0 +1,37 @@
+package week5.parametrization;
+
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelDataRead {
+
+	public static void main(String[] args) throws IOException {
+		
+		XSSFWorkbook workb = new XSSFWorkbook("./data/CreateLead.xlsx");
+		XSSFSheet worksh=workb.getSheet("Vignesh-Sheet1");
+		
+		int rows=worksh.getLastRowNum();
+		System.out.println(rows);
+		
+		int cells=worksh.getRow(0).getLastCellNum();
+		
+		System.out.println(cells);
+		
+		for (int i = 1; i <=rows; i++) {
+			
+			for (int j = 0; j <cells; j++) {
+				
+				String value=worksh.getRow(i).getCell(j).getStringCellValue();
+				System.out.println(value);
+				
+			}
+			
+		}
+		
+		workb.close();
+	
+	}
+
+}
