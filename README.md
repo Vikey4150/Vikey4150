@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Vikey4150
-- 🌱 Automation Tester
+- 🚨 Automation Tester
 - 📫 How to reach me - You can reachout to me thru mail - vikey4150@gmail.com
 - Senior Analyst in Wipro Technologies
 - Now Programmer Analyst in Cognizant
